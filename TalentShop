@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TalentID Store - Diamond FF & TheoTown</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      padding: 24px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin-top: 8px;
+      opacity: 0.9;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #020617;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #22c55e;
+      color: #052e16;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #16a34a;
+    }
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TalentID Store</h1>
+    <p>Jual Diamond Free Fire & TheoTown • Fast • Trusted • Aman</p>
+  </header>  <div class="container">
+    <div class="card">
+      <h2>🔥 Produk Kami</h2>
+      <ul>
+        <li>Diamond Free Fire (Legal & Aman)</li>
+        <li>Diamond TheoTown</li>
+        <li>Proses cepat & terpercaya</li>
+      </ul>
+    </div><div class="card">
+  <h2>📝 Form Order</h2>
+  <form onsubmit="sendWhatsApp(); return false;">
+    <label>Game</label>
+    <select id="game">
+      <option>Free Fire</option>
+      <option>TheoTown</option>
+    </select>
+
+    <label>ID Player</label>
+    <input type="text" id="idplayer" placeholder="Masukkan ID Player" required />
+
+    <label>Paket Diamond</label>
+    <input type="text" id="paket" placeholder="Contoh: 100 Diamond" required />
+
+    <label>Catatan (opsional)</label>
+    <textarea id="note" placeholder="Jika ada"></textarea>
+
+    <button type="submit">Order via WhatsApp</button>
+  </form>
+</div>
+
+<div class="card">
+  <h2>💳 Pembayaran</h2>
+  <ul>
+    <li>DANA</li>
+    <li>OVO</li>
+    <li>GoPay</li>
+    <li>QRIS</li>
+  </ul>
+  <p>*Pembayaran manual, kirim bukti ke admin</p>
+</div>
+
+<div class="card">
+  <h2>📞 Kontak Admin</h2>
+  <p>WhatsApp: <b>08xxxxxxxxxx</b></p>
+  <p>Fast respon • Aman • Terpercaya</p>
+</div>
+
+  </div>  <footer>
+    © 2026 TalentID Store. All Rights Reserved.
+  </footer>  <script>
+    function sendWhatsApp() {
+      const game = document.getElementById('game').value;
+      const id = document.getElementById('idplayer').value;
+      const paket = document.getElementById('paket').value;
+      const note = document.getElementById('note').value;
+
+      const phone = '628xxxxxxxxxx'; // ganti dengan nomor WA admin
+      const text = `Halo Admin TalentID%0A%0AGame: ${game}%0AID Player: ${id}%0APaket: ${paket}%0ACatatan: ${note}`;
+
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+    }
+  </script></body>
+</html>
